@@ -36,6 +36,8 @@ section {
   color: rgb(251, 165, 4);
 }
 
+/* header section> */
+
 header {
   position: relative;
   background-color: rgb(98, 34, 204);
@@ -220,6 +222,10 @@ div#header-part-left h1 {
   top: 780px;
 }
 
+/* < header section*/
+
+/* services box > */
+
 #service-boxes {
   display: flex;
   justify-content: center;
@@ -268,3 +274,5 @@ div#header-part-left h1 {
 .service-box:hover {
   margin-top: -15px;
 }
+
+/* < services box  */
