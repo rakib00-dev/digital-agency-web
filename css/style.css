@@ -324,6 +324,43 @@ div#header-part-left h1 {
   font-family: 'heebo', sans-serif;
 }
 
+#about-us-text h1 {
+  font-size: 40px;
+  color: #000;
+  line-height: 43px;
+  padding: 20px 0;
+}
+
+#about-us-text p {
+  padding: 20px 0;
+}
+
+#about-digits {
+  width: 100%;
+}
+
+.about-digit {
+  float: left;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.progress {
+  height: 3px;
+  float: left;
+  /* top: 20px; */
+  position: relative;
+  width: 21px;
+  background: black;
+  left: 0;
+  /* box-sizing: border-box; */
+}
+
+#about-read-more {
+  float: left;
+}
+
 #about-us-right img {
   width: 48%;
   float: left;
