@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
   padding: 0px;
   margin: 0px;
@@ -7,7 +7,7 @@
 }
 
 body {
-  font-family: Heebo, sans-serif;
+  font-family: 'Heebo', sans-serif;
   font-size: 16px;
   color: rgb(82, 79, 87);
   background: rgb(255, 255, 255);
@@ -31,9 +31,31 @@ section {
   width: 92%;
   margin: auto;
 }
+#wrapper {
+  width: 82%;
+  margin: auto;
+}
 
 .highlight {
   color: rgb(251, 165, 4);
+}
+
+.double-hyphen {
+  position: absolute;
+  width: 15px;
+  height: 2px;
+  background: #fba504;
+  top: 11px;
+  left: 87px;
+}
+
+.double-hyphen::after {
+  content: '';
+  position: absolute;
+  background: #fba504;
+  width: 30px;
+  height: 2px;
+  left: 22px;
 }
 
 /* header section> */
@@ -51,7 +73,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-family: jost, sans-serif;
+  font-family: 'jost', sans-serif;
   padding: 8px 0px;
   line-height: 50px;
 }
@@ -175,7 +197,7 @@ nav {
 div#header-part-left h1 {
   font-size: 41px;
   width: 438px;
-  font-family: jost, sans-serif;
+  font-family: 'jost', sans-serif;
   line-height: 47px;
   padding-bottom: 22px;
 }
@@ -199,8 +221,8 @@ div#header-part-left h1 {
 }
 
 #header-part-left-button a:first-child:hover {
-  background-color: rgb(255, 174, 22);
-  border-color: rgb(251, 165, 4);
+  background-color: #ffae16;
+  border-color: #fba504;
 }
 
 #header-part-left-button a:last-child {
@@ -256,7 +278,7 @@ div#header-part-left h1 {
 }
 
 .service-box .service-text h5 {
-  font-family: jost, sans-serif;
+  font-family: 'jost', sans-serif;
   font-size: 20px;
   font-weight: 500;
   color: rgb(0, 0, 0);
@@ -276,3 +298,33 @@ div#header-part-left h1 {
 }
 
 /* < services box  */
+
+/* about us section > */
+
+#about-us-title {
+  position: relative;
+  color: #fba504;
+  font-weight: 500;
+}
+
+#about-us {
+  display: flex;
+  padding: 50px 0;
+}
+
+#about-us-left {
+  font-family: 'jost', sans-serif;
+  width: 48%;
+  float: left;
+  margin-right: 30px;
+}
+
+#about-us-text p,
+#about-us-title {
+  font-family: 'heebo', sans-serif;
+}
+
+#about-us-right img {
+  width: 48%;
+  float: left;
+}
