@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-* {
+*,
+*::after,
+*::before {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
@@ -62,13 +64,14 @@ section {
 
 header {
   position: relative;
-  background-color: rgb(98, 34, 204);
+  background-color: #6222cc;
   height: 896px;
   overflow: hidden;
   margin-bottom: 100px;
 }
 
 nav {
+  /* position: fixed; */
   color: rgb(255, 255, 255);
   display: flex;
   justify-content: space-between;
@@ -76,6 +79,7 @@ nav {
   font-family: 'jost', sans-serif;
   padding: 8px 0px;
   line-height: 50px;
+  /* width: 100%; */
 }
 
 #nav-menu-bar ul {
@@ -182,10 +186,16 @@ nav {
   transform: translate(-50%, -50%);
 }
 
-#header-bg-top-letf {
+#header-bg-top-left {
   position: absolute;
   top: 0px;
   left: 0px;
+}
+
+#header-bg-top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 
 #header-part-left {
@@ -346,19 +356,48 @@ div#header-part-left h1 {
   justify-content: space-between;
 }
 
-.progress {
-  height: 3px;
+.progress1 {
+  height: 5px;
   float: left;
-  /* top: 20px; */
   position: relative;
-  width: 21px;
+  width: 85%;
+  background: #6222cc;
+  left: 0;
+  margin: 10px 0 28px 0;
+  border-radius: 7px;
+}
+.progress2 {
+  height: 5px;
+  float: left;
+  position: relative;
+  width: 90%;
+  background: orange;
+  left: 0;
+  margin: 10px 0 28px 0;
+  border-radius: 7px;
+}
+.progress3 {
+  height: 5px;
+  float: left;
+  position: relative;
+  width: 95%;
   background: black;
   left: 0;
-  /* box-sizing: border-box; */
+  margin: 10px 0 28px 0;
+  border-radius: 7px;
 }
 
 #about-read-more {
+  font-family: 'heebo', sans-serif;
   float: left;
+  padding: 20px 40px;
+  color: white;
+  background: #6222cc;
+  border-radius: 3em;
+}
+
+#about-read-more a {
+  color: white;
 }
 
 #about-us-right img {
