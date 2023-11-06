@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Heebo', sans-serif;
   font-size: 16px;
@@ -60,6 +64,21 @@ section {
   left: 22px;
 }
 
+.navBarScrolling {
+  position: fixed;
+  background: white;
+  color: black;
+  transition: 0.3s;
+}
+
+/* .navBar a {
+
+} */
+
+/* .navBarUnScrolling {
+  position: relative;
+} */
+
 /* header section> */
 
 header {
@@ -79,6 +98,7 @@ nav {
   padding: 8px 0px;
   line-height: 50px;
   width: 100%;
+  transition: 0.3s;
 }
 
 #nav-menu-bar ul {
@@ -403,3 +423,5 @@ div#header-part-left h1 {
   width: 48%;
   float: left;
 }
+
+/* < about section */
