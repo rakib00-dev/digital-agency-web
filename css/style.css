@@ -80,7 +80,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   font-family: 'jost', sans-serif;
-  padding: 8px 0px;
+  padding: 8px 53px;
   line-height: 50px;
   width: 100%;
   transition: 0.3s;
@@ -416,11 +416,16 @@ div#header-part-left h1 {
 .navBarScrolling {
   position: fixed;
   justify-content: space-between;
-  width: 91%;
-  /* background: white; */
+  width: 100%;
+  background: black;
   color: black !important;
-  padding: 0;
+  padding: 0 60px;
   transition: 0.3s;
+  left: 0;
+}
+
+.scroll-a {
+  color: #000;
 }
 
 /* < scrolling effect */
