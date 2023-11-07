@@ -64,21 +64,6 @@ section {
   left: 22px;
 }
 
-.navBarScrolling {
-  position: fixed;
-  background: white;
-  color: black;
-  transition: 0.3s;
-}
-
-/* .navBar a {
-
-} */
-
-/* .navBarUnScrolling {
-  position: relative;
-} */
-
 /* header section> */
 
 header {
@@ -425,3 +410,17 @@ div#header-part-left h1 {
 }
 
 /* < about section */
+
+/* scrolling efect > */
+
+.navBarScrolling {
+  position: fixed;
+  justify-content: space-between;
+  width: 91%;
+  /* background: white; */
+  color: black !important;
+  padding: 0;
+  transition: 0.3s;
+}
+
+/* < scrolling effect */
