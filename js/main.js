@@ -8,8 +8,8 @@ window.addEventListener('scroll', () => {
 
   if (scrolling >= numPlus) {
     navBar.classList.add('navBarScrolling');
-    navBarLink.classList.add('scroll-a');
-    navBarLink.style.color = 'red';
+    // navBarLink.classList.add('scroll-a');
+    // navBarLink.style.color = 'red';
     console.log('fix');
   } else if (scrolling <= numMinus) {
     navBar.classList.remove('navBarScrolling');
