@@ -417,14 +417,14 @@ div#header-part-left h1 {
   position: fixed;
   justify-content: space-between;
   width: 100%;
-  background: black;
+  background: white;
   color: black !important;
   padding: 0 60px;
-  transition: 0.3s;
+  transition: 0.2s;
   left: 0;
 }
 
-.scroll-a {
+.scroll-link-color {
   color: #000;
 }
 
