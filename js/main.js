@@ -1,10 +1,10 @@
 let navBar = document.querySelector('nav');
 let navBarLink = document.querySelectorAll('.scroll-link');
-let logo = document.querySelector('#nav-logo');
+let logo = document.querySelector('#logo-on-scroll');
+let navButton = document.querySelector('#scroll-effect');
 
 window.addEventListener('scroll', () => {
   const scrolling = window.scrollY;
-  // const numPlus = 44;
   const numPlus = 44;
   const numMinus = 28;
 
@@ -14,13 +14,20 @@ window.addEventListener('scroll', () => {
     navBarLink.forEach((link) => {
       link.style.color = 'black';
     });
-    logo.styel.color = 'blue';
+
+    navButton.style.background = '#fba504';
+
+    // logo.classList.add('scroll-logo-color');
+    logo.style.color = '#6222cc';
     console.log('fix');
   } else if (scrolling <= numMinus) {
     navBarLink.forEach((link) => {
       link.style.color = '';
     });
     navBar.classList.remove('navBarScrolling');
+    logo.style.color = null;
+    navButton.style.background = null;
+
     console.log('unfixed');
   }
 });
