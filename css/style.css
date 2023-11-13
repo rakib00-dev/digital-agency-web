@@ -424,6 +424,7 @@ div#header-part-left h1 {
   transition: 0.2s;
   left: 0;
   box-shadow: -1px 0px 29px -17px #7f7f7f;
+  z-index: 800;
 }
 
 .scroll-link-color {
