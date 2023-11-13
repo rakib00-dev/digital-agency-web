@@ -417,11 +417,13 @@ div#header-part-left h1 {
   position: fixed;
   justify-content: space-between;
   width: 100%;
+  line-height: 40px;
   background: white;
   color: black !important;
   padding: 0 60px;
   transition: 0.2s;
   left: 0;
+  box-shadow: -1px 0px 29px -17px #7f7f7f;
 }
 
 .scroll-link-color {
