@@ -369,6 +369,8 @@ div#header-part-left h1 {
   left: 0;
   margin: 10px 0 28px 0;
   border-radius: 7px;
+  animation: progress 1.3s ease-in-out forwards;
+  opacity: 0;
 }
 .progress2 {
   height: 5px;
@@ -379,6 +381,8 @@ div#header-part-left h1 {
   left: 0;
   margin: 10px 0 28px 0;
   border-radius: 7px;
+  animation: progress 1.3s ease-in-out forwards;
+  opacity: 0;
 }
 .progress3 {
   height: 5px;
@@ -389,9 +393,23 @@ div#header-part-left h1 {
   left: 0;
   margin: 10px 0 28px 0;
   border-radius: 7px;
+  animation: progress 1.3s ease-in-out forwards;
+  opacity: 0;
+}
+
+@keyframes progress {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 #about-read-more {
+  margin-top: 20px;
   font-family: 'heebo', sans-serif;
   float: left;
   padding: 20px 40px;
