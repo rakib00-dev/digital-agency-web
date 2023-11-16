@@ -24,4 +24,5 @@ window.addEventListener('scroll', () => {
     });
     navButton.style.background = null;
   }
+  console.log(scrolling);
 });
