@@ -1,7 +1,7 @@
-let navBar = document.querySelector('nav');
-let navBarLink = document.querySelectorAll('.scroll-link');
-let logo = document.querySelector('#logo-scroll');
-let navButton = document.querySelector('#nav-button-scroll');
+const navBar = document.querySelector('nav');
+const navBarLink = document.querySelectorAll('.scroll-link');
+const logo = document.querySelector('#logo-scroll');
+const navButton = document.querySelector('#nav-button-scroll');
 
 window.addEventListener('scroll', () => {
   const scrolling = window.scrollY;
@@ -24,5 +24,5 @@ window.addEventListener('scroll', () => {
     });
     navButton.style.background = null;
   }
-  console.log(scrolling);
+  // console.log(scrolling);
 });
