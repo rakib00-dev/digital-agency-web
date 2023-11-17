@@ -25,8 +25,3 @@ window.addEventListener('scroll', () => {
     navButton.style.background = null;
   }
 });
-
-function dey() {
-  if (condition) {
-  }
-}
