@@ -31,7 +31,6 @@ window.addEventListener('scroll', () => {
     if (scrolling >= 615) {
       skills.style.top = '0';
       skills.style.opacity = 1;
-      // skills.style.transform = 'scaleY(1)';
     } else if (scrolling <= 615) {
       skills.style.opacity = null;
       skills.style.top = null;
