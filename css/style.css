@@ -164,7 +164,7 @@ nav {
   top: 9%;
   left: 54%;
   transform: scaleY(0);
-  opacity: calc(0);
+  opacity: 0;
   transition: all 0.4s ease 0s;
 }
 
@@ -263,10 +263,14 @@ div#header-part-left h1 {
 /* services box > */
 
 #service-boxes {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
+  opacity: 0;
+  transition: 0.6s;
+  top: 22px;
 }
 
 .service-box {
@@ -447,6 +451,10 @@ div#header-part-left h1 {
 
 .scroll-link-color {
   color: #000;
+}
+
+.service-boxes-scroll {
+  margin-top: 0;
 }
 
 /* < scrolling effect */
