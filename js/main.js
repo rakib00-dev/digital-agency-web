@@ -21,7 +21,7 @@ window.addEventListener('scroll', () => {
     navBar.classList.remove('navBarScrolling');
     logo.style.color = null;
     navBarLink.forEach((link) => {
-      link.style.color = '';
+      link.style.color = null;
     });
     navButton.style.background = null;
   }
