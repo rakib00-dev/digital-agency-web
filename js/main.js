@@ -8,6 +8,7 @@ window.addEventListener('scroll', () => {
   const numPlus = 44;
   const numMinus = 28;
 
+  // nav bar section
   if (scrolling >= numPlus) {
     navBar.classList.add('navBarScrolling');
 
