@@ -30,9 +30,7 @@ window.addEventListener('scroll', () => {
   {
     if (scrolling >= 625) {
       skills.style.bottom = '0';
-      skills.style.opacity = 1;
     } else if (scrolling <= 625) {
-      skills.style.opacity = null;
       skills.style.bottom = null;
     }
   }

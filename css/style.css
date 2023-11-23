@@ -262,15 +262,19 @@ div#header-part-left h1 {
 
 /* services box > */
 
+#service-section {
+  padding: 100px 0;
+}
+
 #service-boxes {
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
-  opacity: 0;
+  /* opacity: 0; */
   bottom: -82px;
-  transition: 0.5s;
+  transition: 0.6s;
 }
 
 .service-box {
