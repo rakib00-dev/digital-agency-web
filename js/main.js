@@ -28,12 +28,12 @@ window.addEventListener('scroll', () => {
 
   // skills section
   {
-    if (scrolling >= 615) {
-      skills.style.top = '0';
+    if (scrolling >= 625) {
+      skills.style.bottom = '0';
       skills.style.opacity = 1;
-    } else if (scrolling <= 615) {
+    } else if (scrolling <= 625) {
       skills.style.opacity = null;
-      skills.style.top = null;
+      skills.style.bottom = null;
     }
   }
 });

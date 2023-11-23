@@ -269,11 +269,12 @@ div#header-part-left h1 {
   align-items: center;
   margin: auto;
   opacity: 0;
-  transition: 0.6s;
-  top: 22px;
+  bottom: -82px;
+  transition: 0.5s;
 }
 
 .service-box {
+  position: relative;
   height: 232px;
   width: 330px;
   float: left;
@@ -282,7 +283,7 @@ div#header-part-left h1 {
   margin-right: 23px;
   border-radius: 8px;
   padding: 30px;
-  transition: 0.4s;
+  transition: 0.5s;
 }
 
 .service-box:last-child {
@@ -312,7 +313,8 @@ div#header-part-left h1 {
 }
 
 .service-box:hover {
-  margin-top: -15px;
+  margin-top: -28px;
+  cursor: pointer;
 }
 
 /* < services box  */
