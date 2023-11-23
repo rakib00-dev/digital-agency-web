@@ -41,7 +41,7 @@ window.addEventListener('scroll', () => {
 
   // about us section
   {
-    if (scrolling >= 1200) {
+    if (scrolling >= 1180) {
       progress1.classList.add('prog1');
       progress2.classList.add('prog2');
       progress3.classList.add('prog3');
