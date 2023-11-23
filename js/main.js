@@ -59,4 +59,6 @@ window.addEventListener('scroll', () => {
       progress3.classList.remove('prog3');
     }
   }
+
+  console.log(scrolling);
 });
