@@ -2,11 +2,6 @@ const navBar = document.querySelector('nav');
 const navBarLink = document.querySelectorAll('.scroll-link');
 const logo = document.querySelector('#logo-scroll');
 const navButton = document.querySelector('#nav-button-scroll');
-const skills = document.querySelector('#service-boxes');
-const aboutUs = document.querySelector('#about-us');
-const progress1 = document.querySelector('.progress1');
-const progress2 = document.querySelector('.progress2');
-const progress3 = document.querySelector('.progress3');
 
 window.addEventListener('scroll', () => {
   const scrolling = window.scrollY;
@@ -30,17 +25,29 @@ window.addEventListener('scroll', () => {
     navButton.style.background = null;
   }
 
-  // skills section
+  // service section
   {
+    const service = document.querySelectorAll('.service-box');
+
     if (scrolling >= 625) {
-      skills.style.bottom = '0';
+      service.forEach((ss) => {
+        ss.style.bottom = '0';
+      });
     } else {
-      skills.style.bottom = null;
+      service.forEach((skills) => {
+        skills.style.bottom = null;
+      });
+      // service.style.bottom = null;
     }
   }
 
   // about us section
   {
+    const aboutUs = document.querySelector('#about-us');
+    const progress1 = document.querySelector('.progress1');
+    const progress2 = document.querySelector('.progress2');
+    const progress3 = document.querySelector('.progress3');
+
     if (scrolling >= 1180) {
       progress1.classList.add('prog1');
       progress2.classList.add('prog2');
