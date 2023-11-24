@@ -31,23 +31,33 @@ window.addEventListener('scroll', () => {
     const service = document.querySelectorAll('.service-box');
 
     if (scrolling >= 625) {
-      service.forEach((ss) => {
-        ss.style.bottom = '0';
+      service.forEach((skills) => {
+        skills.style.bottom = '0';
+        skills.style.opacity = '1';
       });
     } else {
       service.forEach((skills) => {
         skills.style.bottom = null;
+        skills.style.opacity = null;
       });
-      // service.style.bottom = null;
     }
   }
 
   // about us section
   {
-    const aboutUs = document.querySelector('#about-us');
+    const aboutUsText = document.querySelector('#about-us-left');
+    const aboutUsImg = document.querySelector('#about-scroll');
     const progress1 = document.querySelector('.progress1');
     const progress2 = document.querySelector('.progress2');
     const progress3 = document.querySelector('.progress3');
+
+    if (scrolling >= 925) {
+      aboutUsText.style.left = '0';
+      aboutUsImg.style.right = '0';
+    } else {
+      aboutUsText.style.left = null;
+      aboutUsImg.style.right = null;
+    }
 
     if (scrolling >= 1180) {
       progress1.classList.add('prog1');
