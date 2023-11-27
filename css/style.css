@@ -526,6 +526,59 @@ section#main-showcase {
 
 /* main-showcase-section < */
 
+/* provide-secton > */
+#provide-section {
+  width: 100%;
+  padding: 100px 0;
+}
+
+.section-title {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-family: 'hebbo', sans-serif;
+  color: #fba504;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5px;
+}
+
+.section-title span {
+  height: 2px;
+  width: 30px;
+  background: #fba504;
+  margin-right: 30px;
+  bottom: -6px;
+}
+
+.section-title span:last-child {
+  margin-right: 0;
+  margin-left: 30px;
+}
+
+.section-title span::after {
+  content: '';
+  position: absolute;
+  margin-left: 10px;
+  width: 15px;
+  height: 2px;
+  background-color: #fba504;
+  left: 470px;
+  transform: translate(-50%, 0);
+}
+
+.section-title span:last-child::before {
+  content: '';
+  position: absolute;
+  margin-left: 10px;
+  width: 15px;
+  height: 2px;
+  background-color: #fba504;
+  right: 470px;
+  transform: translate(-50%, 0);
+}
+
 /* scrolling efect > */
 
 .navBarScrolling {
