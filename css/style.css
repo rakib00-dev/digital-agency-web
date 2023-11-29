@@ -605,17 +605,17 @@ section#main-showcase {
 }
 
 #provide-boxes {
-  text-align: center;
   width: 100%;
 }
 
 .provide-box {
+  width: 321px;
+  height: 330px;
+  padding: 23px;
   float: left;
-  width: 356px;
-  height: 322px;
   background-color: #f6f4f9;
-  margin-right: 30px;
-  padding: 45px 30px;
+  text-align: center;
+  border-radius: 13px;
 }
 
 .provide-box i {
