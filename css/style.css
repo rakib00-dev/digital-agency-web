@@ -618,8 +618,17 @@ section#main-showcase {
   border-radius: 13px;
 }
 
-.provide-box i {
-  background: url('/img/blob-primary.png'), center, no-repeat;
+.provide-box #provide-icon {
+  color: white;
+  width: 100px;
+  background-image: url('/img/blob-primary.png');
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  padding: 40px 0;
+
+  margin-bottom: 10px;
+  font-size: 37px;
 }
 
 /* provide section < */
