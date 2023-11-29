@@ -618,6 +618,7 @@ section#main-showcase {
   border-radius: 13px;
   overflow: hidden;
   cursor: pointer;
+  transition: 0.4s;
 }
 
 .provide-box #provide-icon {
@@ -628,7 +629,6 @@ section#main-showcase {
   background-position: center center;
   background-repeat: no-repeat;
   padding: 40px 0;
-
   margin-bottom: 10px;
   font-size: 37px;
 }
@@ -639,17 +639,20 @@ section#main-showcase {
   color: #000;
   font-family: 'jost', sans-serif;
   padding-bottom: 22px;
+  transition: 0.4s;
 }
 
 .provide-box p {
   color: gray;
+  transition: 0.4s;
 }
 
 .provide-box #provide-last-icons {
   position: relative;
   display: flex;
   justify-content: center;
-  bottom: -50px;
+  bottom: -150px;
+  transition: 0.4s;
 }
 
 .provide-box #provide-last-icons i {
@@ -662,6 +665,33 @@ section#main-showcase {
   color: #6222cc;
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
+}
+
+.provide-box:hover {
+  position: relative;
+  background: #6222cc;
+  color: white;
+  height: 320px;
+  margin-top: -20px;
+}
+
+.provide-box:hover #provide-icon {
+  background-image: url('/img/blob-secondary.png');
+  /* margin-top: -20px; */
+}
+
+.provide-box:hover h5,
+.provide-box:hover p {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  color: white;
+  margin-top: -20px;
+  margin-bottom: 8px;
+}
+
+.provide-box:hover #provide-last-icons {
+  bottom: -30px;
 }
 
 /* provide section < */
