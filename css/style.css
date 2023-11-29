@@ -610,12 +610,14 @@ section#main-showcase {
 
 .provide-box {
   width: 321px;
-  height: 330px;
+  height: 309px;
   padding: 23px;
   float: left;
   background-color: #f6f4f9;
   text-align: center;
   border-radius: 13px;
+  overflow: hidden;
+  cursor: pointer;
 }
 
 .provide-box #provide-icon {
@@ -629,6 +631,37 @@ section#main-showcase {
 
   margin-bottom: 10px;
   font-size: 37px;
+}
+
+.provide-box h5 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  font-family: 'jost', sans-serif;
+  padding-bottom: 22px;
+}
+
+.provide-box p {
+  color: gray;
+}
+
+.provide-box #provide-last-icons {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  bottom: -50px;
+}
+
+.provide-box #provide-last-icons i {
+  width: 34px;
+  height: 45px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  padding-top: 7px;
+  color: #6222cc;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
 }
 
 /* provide section < */
