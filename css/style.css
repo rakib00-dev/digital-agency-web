@@ -619,6 +619,8 @@ section#main-showcase {
   overflow: hidden;
   cursor: pointer;
   transition: 0.4s;
+  margin-right: 20px;
+  margin-bottom: 30px;
 }
 
 .provide-box #provide-icon {
