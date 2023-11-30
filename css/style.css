@@ -606,6 +606,7 @@ section#main-showcase {
 
 #provide-boxes {
   width: 100%;
+  column-count: 3;
 }
 
 .provide-box {
@@ -621,6 +622,11 @@ section#main-showcase {
   transition: 0.4s;
   margin-right: 20px;
   margin-bottom: 30px;
+}
+
+.provide-box:nth-child(3),
+.provide-box:nth-child(6) {
+  margin-right: 0;
 }
 
 .provide-box #provide-icon {
