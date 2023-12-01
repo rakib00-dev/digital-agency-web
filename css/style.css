@@ -267,7 +267,8 @@ div#header-part-left h1 {
 
 #header-img img {
   position: absolute;
-  top: 780px;
+  top: 788px;
+  width: 100%;
 }
 
 /* < header section*/
