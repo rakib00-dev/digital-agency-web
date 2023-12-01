@@ -1,6 +1,6 @@
 ## digital agency
 
-Hey There you can contribute to this project it you want. 
+Hey There you can contribute to this project it you want. 🫠
 
 ## license
 
