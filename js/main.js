@@ -74,8 +74,6 @@ window.addEventListener('scroll', () => {
   {
     const mainShowcaseBox = document.querySelectorAll('.main-showcase-box');
     const mainShowcase = document.querySelector('#main-showcase');
-    const nums = document.querySelectorAll('#numbers');
-    let counter = 0;
 
     if (scrolling >= 1846) {
       mainShowcaseBox.forEach((pBox) => {
@@ -91,21 +89,24 @@ window.addEventListener('scroll', () => {
       mainShowcase.style.opacity = null;
       mainShowcase.style.marginBottom = null;
     }
-    if (scrolling == 1840) {
-      setInterval(() => {
-        if (counter === 1234) {
-          nums.forEach(() => {
-            clearInterval();
-          });
-        } else {
-          counter += 1;
-          nums.forEach((nums) => {
-            nums.innerHTML = counter;
-          });
-        }
-      }, 1);
-    }
   }
 });
 
 // main -showcase number 0% to 100%
+if (window.scrollY >= 1800) {
+  const nums = document.querySelectorAll('#numbers');
+  let counter = 0;
+  setInterval(() => {
+    if (counter == 190) {
+      nums.forEach(() => {
+        clearInterval();
+      });
+    } else {
+      counter += 1;
+      nums.forEach((nums) => {
+        nums.innerHTML = counter;
+      });
+    }
+  }, 10);
+  console.log('working');
+}
