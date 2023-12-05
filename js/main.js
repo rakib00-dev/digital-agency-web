@@ -93,20 +93,22 @@ window.addEventListener('scroll', () => {
 });
 
 // main -showcase number 0% to 100%
-if (window.scrollY >= 1800) {
-  const nums = document.querySelectorAll('#numbers');
-  let counter = 0;
-  setInterval(() => {
-    if (counter == 190) {
-      nums.forEach(() => {
-        clearInterval();
-      });
-    } else {
-      counter += 1;
-      nums.forEach((nums) => {
-        nums.innerHTML = counter;
-      });
-    }
-  }, 10);
-  console.log('working');
-}
+window.addEventListener('scroll', () => {
+  if (window.scrollY >= 1800) {
+    const nums = document.querySelectorAll('#numbers');
+    let counter = 0;
+    setInterval(() => {
+      if (counter == 190) {
+        nums.forEach(() => {
+          clearInterval();
+        });
+      } else {
+        counter += 1;
+        nums.forEach((nums) => {
+          nums.innerHTML = counter;
+        });
+      }
+    }, 10);
+    console.log('working');
+  }
+});
