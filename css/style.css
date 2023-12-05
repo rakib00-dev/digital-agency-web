@@ -508,7 +508,7 @@ section#main-showcase {
   padding: 91px 0;
   opacity: 0;
   margin-bottom: -60px;
-  transition: 1s;
+  transition: 0.8s;
 }
 
 #main-showcase-boxes {
@@ -521,7 +521,7 @@ section#main-showcase {
 .main-showcase-box {
   margin-right: 143px;
   opacity: 0;
-  transition: 1s;
+  transition: 0.8s;
 }
 
 .main-showcase-box:last-child {
