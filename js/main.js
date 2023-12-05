@@ -69,4 +69,27 @@ window.addEventListener('scroll', () => {
       progress3.classList.remove('prog3');
     }
   }
+
+  // provide section
+  {
+    const mainShowcaseBox = document.querySelectorAll('.main-showcase-box');
+    const mainShowcase = document.querySelector('#main-showcase');
+
+    if (scrolling >= 1846) {
+      mainShowcaseBox.forEach((pBox) => {
+        pBox.style.opacity = '1';
+      });
+      // mainShowcase.forEach((ele) => {
+      // });
+      mainShowcase.style.opacity = '1';
+      mainShowcase.style.marginBottom = '0';
+    } else {
+      mainShowcaseBox.forEach((pBox) => {
+        pBox.style.opacity = null;
+      });
+
+      mainShowcase.style.opacity = null;
+      mainShowcase.style.marginBottom = null;
+    }
+  }
 });

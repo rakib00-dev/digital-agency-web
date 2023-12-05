@@ -470,12 +470,12 @@ div#header-part-left h1 {
 /* main showcase section >  */
 #ms-bg-top-left {
   position: absolute;
-  margin-top: -234px;
+  margin-top: -252px;
 }
 
 #ms-bg-top-right {
   position: absolute;
-  margin-top: -234px;
+  margin-top: -252px;
   right: 0;
 }
 #ms-bg-bottom-left {
@@ -506,6 +506,9 @@ section#main-showcase {
   margin: 120px 0;
   height: 340px;
   padding: 91px 0;
+  opacity: 0;
+  margin-bottom: -60px;
+  transition: 1s;
 }
 
 #main-showcase-boxes {
@@ -517,6 +520,8 @@ section#main-showcase {
 
 .main-showcase-box {
   margin-right: 143px;
+  opacity: 0;
+  transition: 1s;
 }
 
 .main-showcase-box:last-child {
