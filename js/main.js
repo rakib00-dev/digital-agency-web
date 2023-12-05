@@ -2,6 +2,8 @@ const navBar = document.querySelector('nav');
 const navBarLink = document.querySelectorAll('.scroll-link');
 const logo = document.querySelector('#logo-scroll');
 const navButton = document.querySelector('#nav-button-scroll');
+const nums = document.querySelectorAll('#numbers');
+let counter = 0;
 
 window.addEventListener('scroll', () => {
   const scrolling = window.scrollY;
@@ -89,26 +91,21 @@ window.addEventListener('scroll', () => {
       mainShowcase.style.opacity = null;
       mainShowcase.style.marginBottom = null;
     }
-  }
-});
 
-// main -showcase number 0% to 100%
-window.addEventListener('scroll', () => {
-  if (window.scrollY >= 1800) {
-    const nums = document.querySelectorAll('#numbers');
-    let counter = 0;
-    setInterval(() => {
-      if (counter == 190) {
-        nums.forEach(() => {
-          clearInterval();
-        });
-      } else {
-        counter += 1;
-        nums.forEach((nums) => {
-          nums.innerHTML = counter;
-        });
-      }
-    }, 10);
-    console.log('working');
+    // main -showcase number 0% to 100%
+    if (window.scrollY >= 1800) {
+      setInterval(() => {
+        if (counter == 1900) {
+          nums.forEach(() => {
+            clearInterval();
+          });
+        } else {
+          counter += 1;
+          nums.forEach((nums) => {
+            nums.innerHTML = counter;
+          });
+        }
+      }, 10);
+    }
   }
 });
