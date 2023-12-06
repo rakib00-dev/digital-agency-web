@@ -84,8 +84,8 @@ window.addEventListener('scroll', () => {
       mainShowcase.style.opacity = '1';
       mainShowcase.style.marginBottom = '0';
     } else {
-      mainShowcaseBox.forEach((pBox) => {
-        pBox.style.opacity = null;
+      mainShowcaseBox.forEach((msBox) => {
+        msBox.style.opacity = null;
       });
 
       mainShowcase.style.opacity = null;
@@ -106,6 +106,50 @@ window.addEventListener('scroll', () => {
           });
         }
       }, 10);
+    }
+  }
+
+  // provide section
+  {
+    const provideSection = document.querySelector('#provide-section');
+    const provideBox1 = document.querySelectorAll('#pBox1');
+    const provideBox2 = document.querySelectorAll('#pBox2');
+    const provideBox3 = document.querySelectorAll('#pBox3');
+    const provideBox4 = document.querySelectorAll('#pBox4');
+    const provideBox5 = document.querySelectorAll('#pBox5');
+    const provideBox6 = document.querySelectorAll('#pBox6');
+
+    if (scrolling >= 2100) {
+      provideSection.style.bottom = '0';
+    } else {
+      provideSection.style.bottom = null;
+    }
+    if (scrolling >= 2300) {
+      provideBox1.forEach((pBox) => {
+        pBox.style.opacity = '1';
+        pBox.style.bottom = '0';
+      });
+      provideBox3.forEach((pBox) => {
+        pBox.style.opacity = '1';
+        pBox.style.bottom = '0';
+      });
+      provideBox5.forEach((pBox) => {
+        pBox.style.opacity = '1';
+        pBox.style.bottom = '0';
+      });
+    } else {
+      provideBox1.forEach((pBox) => {
+        pBox.style.opacity = null;
+        pBox.style.bottom = null;
+      });
+      provideBox3.forEach((pBox) => {
+        pBox.style.opacity = null;
+        pBox.style.bottom = null;
+      });
+      provideBox5.forEach((pBox) => {
+        pBox.style.opacity = null;
+        pBox.style.bottom = null;
+      });
     }
   }
 });

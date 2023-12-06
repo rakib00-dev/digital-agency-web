@@ -548,6 +548,9 @@ section#main-showcase {
 #provide-section {
   width: 100%;
   padding: 100px 0;
+  position: relative;
+  bottom: -70px;
+  transition: 0.9s;
 }
 
 .section-title {
@@ -616,6 +619,7 @@ section#main-showcase {
 }
 
 .provide-box {
+  position: relative;
   width: 321px;
   height: 309px;
   padding: 23px;
@@ -625,9 +629,9 @@ section#main-showcase {
   border-radius: 13px;
   overflow: hidden;
   cursor: pointer;
-  transition: 0.4s;
   margin-right: 20px;
   margin-bottom: 30px;
+  transition: 0.5s;
 }
 
 .provide-box:nth-child(3),
@@ -706,6 +710,33 @@ section#main-showcase {
 
 .provide-box:hover #provide-last-icons {
   bottom: -30px;
+}
+
+#pBox1,
+#pBox2,
+#pBox3,
+#pBox4,
+#pBox5,
+#pBox6 {
+  opacity: 1;
+}
+
+#pBox1,
+#pBox2 {
+  bottom: -70px;
+  opacity: 0;
+}
+
+#pBox3,
+#pBox4 {
+  bottom: -130px;
+  opacity: 0;
+}
+
+#pBox5,
+#pBox6 {
+  bottom: -190px;
+  opacity: 0;
 }
 
 /* provide section < */
