@@ -179,4 +179,15 @@ window.addEventListener('scroll', () => {
       });
     }
   }
+
+  // newsletter section
+  {
+    const newsletter = document.querySelector('#newsletter');
+
+    if (scrolling >= 3132) {
+      newsletter.style.bottom = '0';
+    } else {
+      newsletter.style.bottom = null;
+    }
+  }
 });

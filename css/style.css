@@ -741,6 +741,112 @@ section#main-showcase {
 
 /* provide section < */
 
+/* newsletter section > */
+#newsletter-title-line1::after {
+  background: white;
+}
+#newsletter-title-line2::before {
+  background: white;
+}
+
+#newsletter {
+  position: relative;
+  background: #6222cc;
+  text-align: center;
+  justify-content: center;
+  margin: 100px 0;
+  padding: 10px 0;
+  transition: 0.4s !important;
+  bottom: -120px;
+}
+
+.newsletter-title {
+  padding-top: 98px;
+  padding-bottom: 33px;
+}
+
+div#newsletter-content h1 {
+  color: white;
+  font-size: 40px;
+  padding-bottom: 11px;
+}
+
+div#newsletter-content p {
+  display: inline-flex;
+  color: white;
+  width: 600px;
+  text-align: center;
+  padding-bottom: 24px;
+}
+
+#newsletter-input {
+  display: inline-flex;
+  position: relative;
+  width: 586px;
+  background: white;
+  border-radius: 109px;
+  margin-bottom: 105px;
+}
+
+#newsletter-input input {
+  position: relative;
+  height: 48px;
+  width: 100%;
+  border: none;
+  border-radius: 100px;
+  padding: 0 23px;
+}
+
+#newsletter-input button {
+  display: flex;
+  position: absolute;
+  right: 17px;
+  height: 100%;
+  justify-content: center;
+  border: none;
+  background: none;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+#newsletter-input button i {
+  font-size: 25px;
+  padding: 6px 0;
+  line-height: 40px;
+  color: #6222cc;
+}
+
+#news-bg-top-left {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#news-bg-top-right {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+#news-bg-bottom-right {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+#news-bg-bottom-left {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+#news-bg-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* newsletter section < */
+
 /* scrolling efect > */
 
 .navBarScrolling {
