@@ -151,5 +151,32 @@ window.addEventListener('scroll', () => {
         pBox.style.bottom = null;
       });
     }
+    if (scrolling >= 2666) {
+      provideBox2.forEach((pBox) => {
+        pBox.style.opacity = '1';
+        pBox.style.bottom = '0';
+      });
+      provideBox4.forEach((pBox) => {
+        pBox.style.opacity = '1';
+        pBox.style.bottom = '0';
+      });
+      provideBox6.forEach((pBox) => {
+        pBox.style.opacity = '1';
+        pBox.style.bottom = '0';
+      });
+    } else {
+      provideBox2.forEach((pBox) => {
+        pBox.style.opacity = null;
+        pBox.style.bottom = null;
+      });
+      provideBox4.forEach((pBox) => {
+        pBox.style.opacity = null;
+        pBox.style.bottom = null;
+      });
+      provideBox6.forEach((pBox) => {
+        pBox.style.opacity = null;
+        pBox.style.bottom = null;
+      });
+    }
   }
 });
