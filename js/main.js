@@ -187,7 +187,7 @@ window.addEventListener('scroll', () => {
     if (scrolling >= 3132) {
       newsletter.style.bottom = '0';
     } else {
-      newsletter.style.bottom = null;
+      newsletter.style.bottom = '0';
     }
   }
 });
