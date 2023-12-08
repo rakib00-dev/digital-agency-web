@@ -554,11 +554,11 @@ section#main-showcase {
 }
 
 .section-title {
-  font-size: 16px;
+  font-size: 15px;
   text-transform: uppercase;
   font-family: 'hebbo', sans-serif;
   color: #fba504;
-  font-weight: 500;
+  font-weight: 600;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -846,6 +846,15 @@ div#newsletter-content p {
 }
 
 /* newsletter section < */
+
+/* project section > */
+#project-header {
+  font-size: 40px;
+  color: #000;
+  text-align: center;
+  margin: 10px 0;
+}
+/* project section < */
 
 /* scrolling efect > */
 
