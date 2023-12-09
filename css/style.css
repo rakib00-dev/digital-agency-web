@@ -877,6 +877,26 @@ div#newsletter-content p {
   color: #6222cc;
   border-bottom: 2px solid #6222cc;
 }
+
+#project-list-boxes {
+  margin-top: 39px;
+  width: 100%;
+}
+
+.project-list-box {
+  width: 340px;
+  overflow: hidden;
+  border-radius: 15px;
+  background-color: #f6f4f9;
+}
+
+.project-list-box-img {
+  width: 100%;
+}
+
+.project-list-box-img img {
+  width: 100%;
+}
 /* project section < */
 
 /* scrolling efect > */
