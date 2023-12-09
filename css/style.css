@@ -854,6 +854,29 @@ div#newsletter-content p {
   text-align: center;
   margin: 10px 0;
 }
+
+#project-content {
+  margin-top: 28px;
+}
+
+#project-list ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#project-list ul li {
+  color: #000;
+  font-weight: 500;
+  margin: 0 8px;
+  padding: 4px 0;
+  transition: 0.4s;
+}
+
+#project-list ul li.active {
+  color: #6222cc;
+  border-bottom: 2px solid #6222cc;
+}
 /* project section < */
 
 /* scrolling efect > */
