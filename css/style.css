@@ -857,15 +857,19 @@ div#newsletter-content p {
 
 #project-content {
   margin-top: 28px;
+  transition: 0.3s;
 }
 
 #project-list ul {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: 0.4s;
 }
 
 #project-list ul li {
+  position: relative;
   color: #000;
   font-weight: 500;
   margin: 0 8px;
@@ -873,9 +877,16 @@ div#newsletter-content p {
   transition: 0.4s;
 }
 
+#project-list li:hover {
+  color: #6222cc;
+  border-bottom: 2px solid #6222cc;
+  cursor: pointer;
+}
+
 #project-list ul li.active {
   color: #6222cc;
   border-bottom: 2px solid #6222cc;
+  transition: 0.3s;
 }
 
 #project-list-boxes {
