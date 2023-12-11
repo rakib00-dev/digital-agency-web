@@ -13,6 +13,7 @@
 [MIT License](LICENSE)
 
 TO DO:
-[x]make the project section html content and css style.
-[ ]create the project section img on hover effect.
-[ ]create the project section on scroll in javaScript.
+</br>
+[x]make the project section html content and css style.</br>
+[ ]create the project section img on hover effect.</br>
+[ ]create the project section on scroll in javaScript.</br>
