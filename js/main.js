@@ -20,6 +20,8 @@ window.addEventListener('scroll', () => {
       link.style.color = 'black';
     });
     navButton.style.backgroundColor = '#fba504';
+    subMenu.style.top = '91%';
+    subMenu.style.border = '1px solid #cccccc73';
   } else if (scrolling <= numMinus) {
     navBar.classList.remove('navBarScrolling');
     logo.style.color = null;
@@ -27,6 +29,8 @@ window.addEventListener('scroll', () => {
       link.style.color = null;
     });
     navButton.style.background = null;
+    subMenu.style.top = null;
+    subMenu.style.border = null;
   }
 
   // service section
