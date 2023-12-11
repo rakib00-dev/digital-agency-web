@@ -15,4 +15,4 @@
 TO DO:
 []make the project section html content and css style.
 []create the project section img on hover effect.
-[]create the project section on scrolling .
+[]create the project section on scroll in javaScript.
