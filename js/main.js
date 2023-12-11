@@ -3,6 +3,7 @@ const navBarLink = document.querySelectorAll('.scroll-link');
 const logo = document.querySelector('#logo-scroll');
 const navButton = document.querySelector('#nav-button-scroll');
 const nums = document.querySelectorAll('#numbers');
+const subMenu = document.querySelector('#sub-menu');
 let counter = 0;
 
 window.addEventListener('scroll', () => {
