@@ -33,7 +33,7 @@ window.addEventListener('scroll', () => {
     subMenu.style.border = null;
   }
 
-  // service section
+  // service sectios
   {
     const service = document.querySelectorAll('.service-box');
 
