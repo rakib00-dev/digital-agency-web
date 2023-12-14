@@ -198,8 +198,9 @@ window.addEventListener('scroll', () => {
 });
 
 // data filter in project section
-const filterList = document.querySelectorAll('[data-filter]');
-const filterItems = document.querySelectorAll('[data-item]');
+const filterList = document.querySelectorAll('#data-list');
+const filterItems = document.querySelectorAll('#data-item');
+const dataFilter = document.querySelectorAll('[data-filter]');
 
 for (let i = 0; i < filterList.length; i++) {
   filterList[i].addEventListener('click', function () {
@@ -208,14 +209,16 @@ for (let i = 0; i < filterList.length; i++) {
     }
     this.classList.add('active');
 
-    const dataFilter = this.querySelectorAll('[data-filter]');
     for (let u = 0; u < filterItems.length; u++) {
       filterItems[u].classList.add('hide');
       filterItems[u].classList.remove('active');
 
-      if (filterItems[u].filterItems == dataFilter || dataFilter == 'all') {
-        filterItems[u].classList.add('active');
+      if (
+        filterItems[u].querySelectorAll('[data-item]') == dataFilter ||
+        dataFilter == 'all'
+      ) {
         filterItems[u].classList.remove('hide');
+        filterItems[u].classList.add('active');
       }
     }
   });
