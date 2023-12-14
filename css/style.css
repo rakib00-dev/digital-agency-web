@@ -901,6 +901,16 @@ div#newsletter-content p {
   background-color: #f6f4f9;
 }
 
+.project-list-box.hide {
+  /* display: none; */
+  background-color: red;
+}
+
+.project-list-box.active {
+  display: inline;
+  background-color: white;
+}
+
 .project-list-box-img {
   width: 100%;
 }

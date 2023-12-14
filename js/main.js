@@ -196,3 +196,27 @@ window.addEventListener('scroll', () => {
     }
   }
 });
+
+// data filter in project section
+const filterList = document.querySelectorAll('[data-filter]');
+const filterItems = document.querySelectorAll('[data-item]');
+
+for (let i = 0; i < filterList.length; i++) {
+  filterList[i].addEventListener('click', function () {
+    for (let o = 0; o < filterList.length; o++) {
+      filterList[o].classList.remove('active');
+    }
+    this.classList.add('active');
+
+    const dataFilter = this.querySelectorAll('[data-filter]');
+    for (let u = 0; u < filterItems.length; u++) {
+      filterItems[u].classList.add('hide');
+      filterItems[u].classList.remove('active');
+
+      if (filterItems[u].filterItems == dataFilter || dataFilter == 'all') {
+        filterItems[u].classList.add('active');
+        filterItems[u].classList.remove('hide');
+      }
+    }
+  });
+}
