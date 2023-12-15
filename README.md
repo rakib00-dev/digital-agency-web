@@ -19,7 +19,7 @@ TO DO:
 [ ]create the project section on scroll effect in javaScript.
 =======
 </br>
-[ ]make the project section html content and css style.</br>
+[x]make the project section html content and css style.</br>
 [ ]create the project section img on hover effect.</br>
 [ ]create the project section on scroll in javaScript.</br>
 
