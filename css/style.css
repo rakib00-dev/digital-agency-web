@@ -893,22 +893,33 @@ div#newsletter-content p {
 #project-list-boxes {
   margin-top: 39px;
   width: 100%;
+  position: relative;
+  /* justify-content: space-around; */
 }
 
 .project-list-box {
-  display: flex;
+  display: inline-flex;
   height: 385px;
-  width: 340px;
+  width: 328px;
   overflow: hidden;
   border-radius: 15px;
   background-color: #f6f4f9;
+  justify-content: space-around;
+}
+
+.project-list-box:not(:last-child, :nth-child(3)) {
+  margin-right: 19px;
+}
+
+.project-list-box:not(:nth-child(4), :nth-child(5), :nth-child(6)) {
+  margin-bottom: 20px;
 }
 
 .project-list-box-img {
   display: flex;
   position: absolute;
-  width: 340px;
   height: 227px;
+  width: 328px;
 }
 
 .project-list-box-img img {
