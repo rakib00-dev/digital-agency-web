@@ -848,6 +848,13 @@ div#newsletter-content p {
 /* newsletter section < */
 
 /* project section > */
+#projects {
+  position: relative;
+  opacity: 0;
+  bottom: -65px;
+  transition: 0.5s;
+}
+
 #project-header {
   font-size: 40px;
   color: #000;

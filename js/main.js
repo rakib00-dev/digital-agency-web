@@ -192,7 +192,20 @@ window.addEventListener('scroll', () => {
     if (scrolling >= 3132) {
       newsletter.style.bottom = '0';
     } else {
-      newsletter.style.bottom = '0';
+      newsletter.style.bottom = '-120px';
+    }
+  }
+
+  // our project section
+  {
+    const projectTitle = document.getElementById('projects');
+
+    if (scrolling >= 3880) {
+      projectTitle.style.opacity = '1';
+      projectTitle.style.bottom = 0;
+    } else {
+      projectTitle.style.opacity = null;
+      projectTitle.style.bottom = '-65px';
     }
   }
 });
