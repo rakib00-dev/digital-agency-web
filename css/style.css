@@ -852,7 +852,7 @@ div#newsletter-content p {
   position: relative;
   opacity: 0;
   bottom: -65px;
-  transition: 0.5s;
+  transition: 0.7s;
 }
 
 #project-header {
@@ -901,7 +901,6 @@ div#newsletter-content p {
   margin-top: 39px;
   width: 100%;
   position: relative;
-  /* justify-content: space-around; */
 }
 
 .project-list-box {
@@ -982,6 +981,7 @@ section#testimonial {
 }
 
 #testimonial-boxes {
+  overflow: hidden;
   position: absolute;
   display: flex;
   width: 100%;
