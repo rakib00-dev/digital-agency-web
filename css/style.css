@@ -981,8 +981,6 @@ section#testimonial {
 }
 
 #testimonial-boxes {
-  overflow: hidden;
-  position: absolute;
   display: flex;
   width: 100%;
 }
