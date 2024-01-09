@@ -983,7 +983,7 @@ section#testimonial {
 #testimonial-boxes {
   display: flex;
   width: 100%;
-  gap: 26px;
+  gap: 35px;
 }
 .testimonial-box {
   position: relative;
@@ -1038,18 +1038,21 @@ section#testimonial {
 
 #testimonial-nav {
   display: flex;
-  gap: 10px;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 
 #testimonial-nav span {
-  height: 30px;
-  width: 30px;
-  background-color: rebeccapurple;
 }
 
 #testimonial-nav span i {
-  font-size: 20px;
-  background-color: red;
+  font-size: 19px;
+  color: #6222cc;
+  background-color: #f6f4f9;
+  padding: 19px;
+  border-radius: 50%;
 }
 
 /* testimonial section < */
