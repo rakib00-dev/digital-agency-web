@@ -1036,6 +1036,22 @@ section#testimonial {
   font-weight: 700;
 }
 
+#testimonial-nav {
+  display: flex;
+  gap: 10px;
+}
+
+#testimonial-nav span {
+  height: 30px;
+  width: 30px;
+  background-color: rebeccapurple;
+}
+
+#testimonial-nav span i {
+  font-size: 20px;
+  background-color: red;
+}
+
 /* testimonial section < */
 
 /* scrolling efect > */
