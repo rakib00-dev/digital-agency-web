@@ -1054,6 +1054,27 @@ section#testimonial {
 
 /* testimonial section < */
 
+/* our team section > */
+#our-team-boxes {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-team-box {
+  display: grid;
+  background: #f6f4f9;
+  padding: 22px 28px;
+  border-radius: 10px;
+  place-items: center;
+}
+
+.our-team-box-img img {
+  border-radius: 100%;
+  height: 290px;
+}
+/* our team section < */
+
 /* scrolling efect > */
 
 .navBarScrolling {
