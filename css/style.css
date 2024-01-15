@@ -1072,6 +1072,27 @@ section#testimonial {
 .our-team-box-img img {
   border-radius: 100%;
   height: 290px;
+  margin-bottom: 15px;
+}
+
+.our-team-box-title {
+  display: inline;
+  justify-content: center;
+}
+
+.our-team-box-title h5 {
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+}
+
+.our-team-box-title span {
+  font-size: 16px;
+  font-weight: 400;
+  color: #726d7b;
+  justify-content: center;
+  display: flex;
+  margin: 9px -18px;
 }
 /* our team section < */
 
