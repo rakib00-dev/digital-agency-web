@@ -1078,9 +1078,10 @@ section#testimonial {
 .our-team-box-title {
   display: inline;
   justify-content: center;
+  margin-bottom: 10px;
 }
 
-.our-team-box-title h5 {
+.our-team-box-title .our-team-box-title h5 {
   font-size: 20px;
   font-weight: 500;
   color: black;
@@ -1098,6 +1099,7 @@ section#testimonial {
 .our-team-box-icon {
   display: inline-flex;
   gap: 10px;
+  margin-top: 10px;
 }
 
 .our-team-box-icon i {
@@ -1112,7 +1114,7 @@ section#testimonial {
   display: flex;
 }
 
-/* our team section < */
+/* Our team section < */
 
 /* scrolling efect > */
 
