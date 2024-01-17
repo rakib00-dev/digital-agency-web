@@ -1104,7 +1104,12 @@ section#testimonial {
   color: #6222cc;
   background: #fff;
   padding: 20px;
+  height: 36px;
   border-radius: 50%;
+  width: 23px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 
 /* our team section < */
