@@ -1095,6 +1095,18 @@ section#testimonial {
   margin: 9px -18px;
 }
 
+.our-team-box-icon {
+  display: inline-flex;
+  gap: 10px;
+}
+
+.our-team-box-icon i {
+  color: #6222cc;
+  background: #fff;
+  padding: 20px;
+  border-radius: 50%;
+}
+
 /* our team section < */
 
 /* scrolling efect > */
