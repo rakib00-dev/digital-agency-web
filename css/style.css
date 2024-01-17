@@ -1067,6 +1067,7 @@ section#testimonial {
   padding: 22px 28px;
   border-radius: 10px;
   place-items: center;
+  overflow: hidden;
 }
 
 .our-team-box-img img {
@@ -1077,11 +1078,18 @@ section#testimonial {
 
 .our-team-box-title {
   display: inline;
-  justify-content: center;
   margin-bottom: 10px;
 }
+.our-team-box-title::after {
+  content: '';
+  display: flex;
+  position: absolute;
+  border-bottom: 1px solid #dee2e6;
+  width: 347px;
+  left: 113px;
+}
 
-.our-team-box-title .our-team-box-title h5 {
+.our-team-box-title h5 {
   font-size: 20px;
   font-weight: 500;
   color: black;
