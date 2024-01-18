@@ -1093,13 +1093,14 @@ section#testimonial {
   display: inline;
   margin-bottom: 10px;
 }
-.our-team-box-title::after {
-  content: '';
+#our-team-underline {
   display: flex;
   position: absolute;
   border-bottom: 1px solid #dee2e6;
   width: 347px;
-  left: 0;
+  background: #dee2e6;
+  height: 1px;
+  bottom: 74px;
 }
 
 .our-team-box-title h5 {
