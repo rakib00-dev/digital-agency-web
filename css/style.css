@@ -860,6 +860,7 @@ div#newsletter-content p {
   color: #000;
   text-align: center;
   margin: 10px 0;
+  margin-bottom: 48px;
 }
 
 #project-content {
@@ -1066,6 +1067,13 @@ section#testimonial {
   align-items: center;
 }
 
+#our-team-boxes {
+  display: inline-flex;
+  gap: 23px;
+  position: relative;
+  right: 20px;
+}
+
 .our-team-box {
   display: grid;
   background: #f6f4f9;
@@ -1091,8 +1099,7 @@ section#testimonial {
   position: absolute;
   border-bottom: 1px solid #dee2e6;
   width: 347px;
-  left: 113px;
-  bottom: 6235px;
+  left: 0;
 }
 
 .our-team-box-title h5 {
@@ -1126,6 +1133,7 @@ section#testimonial {
   justify-content: center;
   align-items: center;
   display: flex;
+  cursor: pointer;
 }
 
 /* our team section < */
