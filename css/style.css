@@ -447,10 +447,12 @@ div#header-part-left h1 {
   margin-top: 20px;
   font-family: 'heebo', sans-serif;
   float: left;
-  padding: 20px 40px;
+  padding: 16px 40px;
   color: white;
   background: #6222cc;
   border-radius: 3em;
+  position: absolute;
+  bottom: -1657px;
 }
 
 #about-read-more a {
