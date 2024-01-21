@@ -1146,6 +1146,18 @@ section#testimonial {
 
 /* our team section < */
 
+/* footer section > */
+#footer {
+  background: url(../img/bg-top.png), url(../img/map.png);
+  background-color: #6222cc;
+  background-position: center top, center center;
+  background-repeat: no-repeat;
+  position: relative;
+  bottom: -882px;
+  height: 550px;
+}
+/* footer section < */
+
 /* scrolling efect > */
 
 .navBarScrolling {
