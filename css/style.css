@@ -1200,6 +1200,37 @@ section#testimonial {
 .footer-box p:nth-child(2) {
   margin-top: 20px;
 }
+
+.footer-box-list-two {
+  margin-top: 20px;
+  width: 228px;
+}
+
+.footer-box-list-two li {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.footer-box-list-two a {
+  text-transform: capitalize;
+  width: 190px;
+}
+
+.footer-box-list-two i {
+  font-size: 10px;
+  padding: 2px 2px 2px 0;
+  display: inline-flex;
+  justify-self: center;
+}
+
+.footer-box-list-three {
+  margin-top: 20px;
+  width: 208px;
+}
+
+.footer-box-list-three img {
+  height: 53px;
+}
 /* footer section < */
 
 /* scrolling efect > */
