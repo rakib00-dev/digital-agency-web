@@ -1058,6 +1058,11 @@ section#testimonial {
   height: 60px;
   width: 60px;
   align-items: center;
+  cursor: pointer;
+}
+
+#footer-box-title {
+  margin-bottom: 20px;
 }
 
 /* testimonial section < */
