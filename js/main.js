@@ -208,8 +208,7 @@ window.addEventListener('scroll', () => {
       projectTitle.style.bottom = '-65px';
     }
   }
-});
-// Data filter in project section
+}); // Data filter in project section
 const filterList = document.querySelectorAll('#data-list');
 const filterItems = document.querySelectorAll('#data-item');
 const dataFilter = document.querySelectorAll('[data-filter]');
