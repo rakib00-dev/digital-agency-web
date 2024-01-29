@@ -1290,9 +1290,10 @@ span#footer-last-title {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  bottom: -80px;
+  bottom: -65px;
   color: #fff;
-  padding: 20px 0;
+  padding: 22px 0;
+  border-top: 1px solid #dee2e62b;
 }
 
 #footer-bottom-1 {
@@ -1307,6 +1308,7 @@ span#footer-last-title {
 #footer-bottom-1 p a {
   color: white;
   border-bottom: 1px solid #fff;
+  transition: 0.2s;
 }
 
 #footer-bottom-1 p a:hover {
@@ -1319,6 +1321,26 @@ span#footer-last-title {
 
 #footer-bottom-2 ul {
   display: inline-flex;
+}
+
+#footer-bottom-2 ul li a {
+  color: white;
+  font-size: 14px;
+  transition: 0.2s;
+  text-transform: capitalize;
+}
+
+#footer-bottom-2 ul li {
+  padding: 0 17px;
+  border-right: 1px solid #7d7d7dac;
+}
+
+#footer-bottom-2 ul li:last-child {
+  border: none;
+}
+
+#footer-bottom-2 ul li:hover > a {
+  color: #fba504;
 }
 
 /* footer section < */
