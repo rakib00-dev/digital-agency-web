@@ -1163,6 +1163,8 @@ section#testimonial {
   margin-top: 100px;
   height: 550px;
   padding-top: 199px;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .footer-icon div i {
@@ -1281,6 +1283,42 @@ span#footer-last-title {
 #footer-newsletter-email button i {
   font-size: 23px;
   color: #6222cc;
+}
+
+#footer-two {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  bottom: -80px;
+  color: #fff;
+  padding: 20px 0;
+}
+
+#footer-bottom-1 {
+  float: left;
+  font-size: 16px;
+}
+
+#footer-bottom-1 p {
+  font-size: 14px;
+}
+
+#footer-bottom-1 p a {
+  color: white;
+  border-bottom: 1px solid #fff;
+}
+
+#footer-bottom-1 p a:hover {
+  color: #fba504;
+}
+
+#footer-bottom-2 {
+  float: right;
+}
+
+#footer-bottom-2 ul {
+  display: inline-flex;
 }
 
 /* footer section < */
