@@ -209,7 +209,6 @@ window.addEventListener('scroll', () => {
     }
   }
 });
-
 // Data filter in project section
 const filterList = document.querySelectorAll('#data-list');
 const filterItems = document.querySelectorAll('#data-item');
