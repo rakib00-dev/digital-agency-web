@@ -1236,6 +1236,33 @@ section#testimonial {
 .footer-box-list-three img {
   height: 53px;
 }
+
+span#footer-last-title {
+  display: flex;
+  line-height: 23px;
+  width: 224px;
+  margin-bottom: 20px;
+}
+
+#footer-newsletter-email {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 50px;
+  height: 48px;
+}
+
+#footer-newsletter-email input {
+  float: left;
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  border: none;
+}
+
+#footer-newsletter-email button {
+  float: right;
+}
+
 /* footer section < */
 
 /* scrolling efect > */
