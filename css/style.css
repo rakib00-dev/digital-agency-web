@@ -618,6 +618,11 @@ section#main-showcase {
 #provide-boxes {
   width: 100%;
   column-count: 3;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
 }
 
 .provide-box {
@@ -889,21 +894,44 @@ div#newsletter-content p {
 
 #project-list li:hover {
   color: #6222cc;
+  cursor: pointer;
+}
+
+#project-list li:hover .project-ht::after,
+#project-list ul li.active .project-ht::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  display: flex;
+  color: #6222cc;
   border-bottom: 2px solid #6222cc;
   cursor: pointer;
 }
 
 #project-list ul li.active {
-  display: inline;
   color: #6222cc;
-  border-bottom: 2px solid #6222cc;
-  transition: 0.3s;
+}
+
+.project-list-box.hide2 {
+  display: none;
+}
+
+.project-list-box.active2 {
+  display: inline-flex;
 }
 
 #project-list-boxes {
-  margin-top: 39px;
   width: 100%;
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 39px;
+  gap: 20px;
 }
 
 .project-list-box {
@@ -914,14 +942,7 @@ div#newsletter-content p {
   border-radius: 15px;
   background-color: #f6f4f9;
   justify-content: space-around;
-}
-
-.project-list-box:not(:last-child, :nth-child(3)) {
-  margin-right: 19px;
-}
-
-.project-list-box:not(:nth-child(4), :nth-child(5), :nth-child(6)) {
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .project-list-box-img {

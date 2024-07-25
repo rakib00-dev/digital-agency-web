@@ -208,29 +208,96 @@ window.addEventListener('scroll', () => {
       projectTitle.style.bottom = '-65px';
     }
   }
-}); // Data filter in project section
+});
+
+// Data filter in project section
 const filterList = document.querySelectorAll('#data-list');
-const filterItems = document.querySelectorAll('#data-item');
+const filterItems = document.querySelectorAll('[data-item]');
 const dataFilter = document.querySelectorAll('[data-filter]');
 
 for (let i = 0; i < filterList.length; i++) {
-  filterList[i].addEventListener('click', function () {
-    for (let o = 0; o < filterList.length; o++) {
-      filterList[o].classList.remove('active');
-    }
-    this.classList.add('active');
-
-    for (let u = 0; u < filterItems.length; u++) {
-      filterItems[u].classList.add('hide');
-      filterItems[u].classList.remove('active');
-
-      if (
-        filterItems[u].querySelectorAll('[data-item]') == dataFilter ||
-        dataFilter == 'all'
-      ) {
-        filterItems[u].classList.remove('hide');
-        filterItems[u].classList.add('active');
-      }
-    }
-  });
+  filterList[i].addEventListener('click', filter);
 }
+
+function filter() {
+  for (let o = 0; o < filterList.length; o++) {
+    filterList[o].classList.remove('active');
+  }
+  this.classList.add('active');
+}
+
+// project section first child 'all'
+filterList[0].onclick = () => {
+  for (a = 0; a < filterItems.length; a++) {
+    filterItems[a].classList.add('active2');
+    filterItems[a].classList.remove('hide2');
+  }
+  console.log('ok0');
+};
+
+// project section first child 'web-design'
+filterList[1].onclick = () => {
+  for (a2 = 0; a2 < filterItems.length; a2++) {
+    if (filterItems[a2].dataset.item == dataFilter[1].dataset.filter) {
+      filterItems[a2].classList.add('active2');
+      filterItems[a2].classList.remove('hide2');
+    } else {
+      filterItems[a2].classList.add('hide2');
+      filterItems[a2].classList.remove('active2');
+    }
+  }
+  console.log('ok2');
+};
+
+// project section first child 'graphic-design'
+filterList[2].onclick = () => {
+  for (a3 = 0; a3 < filterItems.length; a3++) {
+    if (filterItems[a3].dataset.item == dataFilter[2].dataset.filter) {
+      filterItems[a3].classList.add('active2');
+      filterItems[a3].classList.remove('hide2');
+    } else {
+      filterItems[a3].classList.add('hide2');
+      filterItems[a3].classList.remove('active2');
+    }
+  }
+  console.log('ok3');
+};
+
+// for (let o = 0; o < filterList.length; o++) {
+//   filterList[o].classList.remove('active');
+// }
+// this.classList.add('active');
+// //prob
+// for (let u = 0; u < filterItems.length; u++) {
+//   filterItems[u].classList.add('hide');
+//   filterItems[u].classList.remove('active');
+//   if (filterItems[u].dataset.item == 'graphic-design') {
+//     filterItems.classList.add('active');
+//     filterItems.classList.remove('hide');
+//   }
+//   if (filterItems[u].dataset.item == 'web-design') {
+//     filterItems.classList.add('active');
+//     filterItems.classList.remove('hide');
+//   }
+//   this.classList.remove('hide');
+// }
+////////////////////////copy
+// for (let u = 0; u < filterItems.length; u++) {
+//   filterItems[u].classList.add('hide2');
+//   filterItems[u].classList.remove('active2');
+//   if (
+//     filterItems[u].querySelectorAll('[data-item]') == dataFilter ||
+//     dataFilter == 'all'
+//   ) {
+//     filterItems[u].classList.add('active2');
+//     filterItems[u].classList.remove('hide2');
+//   }
+//   this.classList.add('hide2');
+// }
+//}
+
+let x = window.innerHeight;
+
+// setInterval(() => {
+//   console.log(x);
+// }, 10);
