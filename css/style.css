@@ -720,15 +720,6 @@ section#main-showcase {
 }
 
 #pBox1,
-#pBox2,
-#pBox3,
-#pBox4,
-#pBox5,
-#pBox6 {
-  opacity: 1;
-}
-
-#pBox1,
 #pBox2 {
   bottom: -70px;
   opacity: 0;

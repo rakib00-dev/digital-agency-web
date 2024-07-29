@@ -117,71 +117,32 @@ window.addEventListener('scroll', () => {
   // provide section
   {
     const provideSection = document.querySelector('#provide-section');
-    const provideBox1 = document.querySelectorAll('#pBox1');
-    const provideBox2 = document.querySelectorAll('#pBox2');
-    const provideBox3 = document.querySelectorAll('#pBox3');
-    const provideBox4 = document.querySelectorAll('#pBox4');
-    const provideBox5 = document.querySelectorAll('#pBox5');
-    const provideBox6 = document.querySelectorAll('#pBox6');
-
-    if (scrolling >= 2100) {
-      provideSection.style.bottom = '0';
-    } else {
-      provideSection.style.bottom = null;
-    }
-    if (scrolling >= 2300) {
-      provideBox1.forEach((pBox) => {
-        pBox.style.opacity = '1';
-        pBox.style.bottom = '0';
-      });
-      provideBox3.forEach((pBox) => {
-        pBox.style.opacity = '1';
-        pBox.style.bottom = '0';
-      });
-      provideBox5.forEach((pBox) => {
-        pBox.style.opacity = '1';
-        pBox.style.bottom = '0';
-      });
-    } else {
-      provideBox1.forEach((pBox) => {
-        pBox.style.opacity = null;
-        pBox.style.bottom = null;
-      });
-      provideBox3.forEach((pBox) => {
-        pBox.style.opacity = null;
-        pBox.style.bottom = null;
-      });
-      provideBox5.forEach((pBox) => {
-        pBox.style.opacity = null;
-        pBox.style.bottom = null;
-      });
-    }
-    if (scrolling >= 2666) {
-      provideBox2.forEach((pBox) => {
-        pBox.style.opacity = '1';
-        pBox.style.bottom = '0';
-      });
-      provideBox4.forEach((pBox) => {
-        pBox.style.opacity = '1';
-        pBox.style.bottom = '0';
-      });
-      provideBox6.forEach((pBox) => {
-        pBox.style.opacity = '1';
-        pBox.style.bottom = '0';
-      });
-    } else {
-      provideBox2.forEach((pBox) => {
-        pBox.style.opacity = null;
-        pBox.style.bottom = null;
-      });
-      provideBox4.forEach((pBox) => {
-        pBox.style.opacity = null;
-        pBox.style.bottom = null;
-      });
-      provideBox6.forEach((pBox) => {
-        pBox.style.opacity = null;
-        pBox.style.bottom = null;
-      });
+    const provideBoxes = document.querySelectorAll('.provide-box');
+    for (let iProv = 0; iProv < provideBoxes.length; iProv++) {
+      if (scrolling >= 2100) {
+        provideSection.style.bottom = '0';
+      } else {
+        provideSection.style.bottom = null;
+      }
+      if (scrolling >= 2300) {
+        provideBoxes[0].style.opacity = '1';
+        provideBoxes[0].style.bottom = '0';
+        provideBoxes[1].style.opacity = '1';
+        provideBoxes[1].style.bottom = '0';
+        provideBoxes[2].style.opacity = '1';
+        provideBoxes[2].style.bottom = '0';
+      }
+      if (scrolling >= 2666) {
+        provideBoxes[3].style.opacity = '1';
+        provideBoxes[3].style.bottom = '0';
+        provideBoxes[4].style.opacity = '1';
+        provideBoxes[4].style.bottom = '0';
+        provideBoxes[5].style.opacity = '1';
+        provideBoxes[5].style.bottom = '0';
+      } else {
+        provideBoxes[iProv].style.bottom = null;
+        provideBoxes[iProv].style.opacity = null;
+      }
     }
   }
 
@@ -295,9 +256,3 @@ filterList[2].onclick = () => {
 //   this.classList.add('hide2');
 // }
 //}
-
-let x = window.innerHeight;
-
-// setInterval(() => {
-//   console.log(x);
-// }, 10);
