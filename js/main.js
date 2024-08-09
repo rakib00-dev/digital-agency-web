@@ -4,6 +4,7 @@ const logo = document.querySelector('#logo-scroll');
 const navButton = document.querySelector('#nav-button-scroll');
 const nums = document.querySelectorAll('#numbers');
 const subMenu = document.querySelector('#sub-menu');
+const headerImg = document.querySelector('#header-img-src');
 let counter = 0;
 
 window.addEventListener('scroll', () => {

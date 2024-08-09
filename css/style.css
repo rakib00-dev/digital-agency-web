@@ -50,7 +50,7 @@ h6 {
   margin: auto;
 }
 #wrapper {
-  width: 82%;
+  width: 86%;
   margin: auto;
 }
 
@@ -623,6 +623,7 @@ section#main-showcase {
   margin: auto;
   justify-content: center;
   align-items: center;
+  gap: 28px;
 }
 
 .provide-box {
@@ -636,8 +637,6 @@ section#main-showcase {
   border-radius: 13px;
   overflow: hidden;
   cursor: pointer;
-  margin-right: 20px;
-  margin-bottom: 30px;
   transition: 0.5s;
 }
 
@@ -717,6 +716,21 @@ section#main-showcase {
 
 .provide-box:hover #provide-last-icons {
   bottom: -30px;
+}
+
+#pBox1,
+#pBox4 {
+  transition: 0.3s;
+}
+
+#pBox2,
+#pBox5 {
+  transition: 0.6s;
+}
+
+#pBox3,
+#pBox6 {
+  transition: 0.8s;
 }
 
 #pBox1,
@@ -905,14 +919,6 @@ div#newsletter-content p {
   color: #6222cc;
 }
 
-.project-list-box.hide2 {
-  display: none;
-}
-
-.project-list-box.active2 {
-  display: inline-flex;
-}
-
 #project-list-boxes {
   width: 100%;
   position: relative;
@@ -934,6 +940,24 @@ div#newsletter-content p {
   background-color: #f6f4f9;
   justify-content: space-around;
   margin-top: 20px;
+  transition-duration: 0.07s;
+  transition: 0.6s;
+  transform: scale(1);
+}
+
+.hide2 {
+  position: absolute;
+  /* display: none; */
+  transform: scale(0);
+  /* transition-delay: 0.5s; */
+  z-index: -1;
+}
+
+.active2 {
+  position: relative;
+  /* display: inline-flex; */
+  transform: scale(1);
+  /* transition-delay: 0.5s; */
 }
 
 .project-list-box-img {
@@ -988,6 +1012,7 @@ div#newsletter-content p {
   font-weight: 500;
   color: black;
 }
+
 /* project section < */
 
 /* testimonial section > */
@@ -999,6 +1024,10 @@ section#testimonial {
   display: flex;
   width: 100%;
   gap: 35px;
+  flex-wrap: wrap;
+  /* margin: auto; */
+  justify-content: center;
+  align-items: center;
 }
 .testimonial-box {
   position: relative;
@@ -1087,10 +1116,14 @@ section#testimonial {
 }
 
 #our-team-boxes {
-  display: inline-flex;
+  display: flex;
   gap: 23px;
   position: relative;
-  right: 20px;
+  /* right: 20px; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .our-team-box {
@@ -1167,6 +1200,11 @@ section#testimonial {
 
 /* Footer section > */
 #footer {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+#footer-wrapper {
   background: url(../img/bg-top.png), url(../img/map.png);
   background-color: #6222cc;
   background-position: center top, center center;
